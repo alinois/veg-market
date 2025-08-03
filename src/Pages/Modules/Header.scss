@@ -1,0 +1,93 @@
+.fixed-header {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 59px;
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 0px 20px 0px 20px;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.logoName {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.vegText {
+    display: flex;
+    width: 190px;
+    height: 33px;
+    background-color: #F7F7F7;
+    border-radius: 31px;
+    color:#000000;
+    font-size: 22px;
+    font-weight: 600;
+    padding-left: 12px;
+    align-items: center;
+    justify-content: start;
+}
+
+.shopText {
+    display: flex;
+    position: relative;
+    left: -75px;
+    width: 80px;
+    height: 33px;
+    background-color: #54B46A;
+    border-radius: 31px;
+    color:#FFFFFF;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: medium;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #54B46A;
+    width: 64px;
+    height: 24px;
+    border-radius: 8px;
+    padding: 10px 40px 10px 40px;
+    transition: background-color 0.35s ease-in-out;
+    img {
+        height: 16px;
+        width: 16px;
+    }
+    .cartButton-title {
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    &:hover {
+    background-color: #3B944E;
+    cursor: pointer;
+}
+}
+
+
+.cart-indicator {
+    min-width: 20px;       
+    height: 20px;
+    background-color: #FFFFFF;
+    color: #212529;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 6px; 
+    box-sizing: border-box;
+    user-select: none;
+}
+

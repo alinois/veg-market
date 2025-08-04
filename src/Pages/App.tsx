@@ -1,14 +1,15 @@
 import { useState } from 'react'
 import { Header } from './Modules/Header'
 import { Body } from './Modules/Body'
+import type { CartItem, Article } from '../types'
 
-export const App = () => {
+export const App: React.FC = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false)
-  const [cartItems, setCartItems] = useState([])
+  const [cartItems, setCartItems] = useState<CartItem[]>([])
 
   const togglePopup = () => setIsPopupOpen(prev => !prev)
 
-  const handleAddToCart = (item, quantity) => {
+  const handleAddToCart = (item: Article, quantity: number) => {
     if (quantity <= 0) return
 
     setCartItems(prev => {
@@ -23,7 +24,7 @@ export const App = () => {
     })
   }
 
-  const handleUpdateQuantity = (id, newQuantity) => {
+  const handleUpdateQuantity = (id: string, newQuantity: number) => {
     if (newQuantity <= 0) {
       setCartItems(prev => prev.filter(item => item.id !== id))
     } else {
@@ -50,4 +51,4 @@ export const App = () => {
   )
 }
 
-export default App;
+export default App

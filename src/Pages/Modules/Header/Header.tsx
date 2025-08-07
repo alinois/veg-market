@@ -1,6 +1,6 @@
 import './Header.scss'
-import whiteCartIcon from '../../assets/WhiteCart.png'
-import type { HeaderProps } from '../../types'
+import whiteCartIcon from '../../../assets/WhiteCart.png'
+import type { HeaderProps } from '../../../types'
 
 export const Header: React.FC<HeaderProps> = ({ onCartClick, totalItems }) => {
   return (

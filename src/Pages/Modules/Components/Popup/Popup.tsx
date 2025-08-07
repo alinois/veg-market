@@ -1,8 +1,8 @@
 import './Popup.scss'
-import '../../../styles/ComponentsStyles.scss'
-import emptyCart from '../../../assets/cart_empty.png'
+import '../../../../styles/ComponentsStyles.scss'
+import emptyCart from '../../../../assets/cart_empty.png'
 import { useState, useEffect } from 'react'
-import type { PopupProps } from '../../../types'
+import type { PopupProps } from '../../../../types'
 
 export const Popup: React.FC<PopupProps> = ({ articles, isOpen, onUpdateQuantity }) => {
   const [total, setTotal] = useState(0)

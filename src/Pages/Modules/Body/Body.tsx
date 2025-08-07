@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
-import { fetchArticles } from './../../api/getArticles'
-import { Cards } from './Components/Cards'
-import { Popup } from './Components/Popup'
+import { fetchArticles } from '../../../api/getArticles'
+import { Cards } from '../Components/Card/Cards'
+import { Popup } from '../Components/Popup/Popup'
 import './Body.scss'
-import type { BodyProps, Article} from '../../types'
+import type { BodyProps, Article} from '../../../types'
 
 export const Body: React.FC<BodyProps> = ({
   isPopupOpen,

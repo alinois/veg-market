@@ -1,9 +1,9 @@
-import '../../../styles/ComponentsStyles.scss'
+import '../../../../styles/ComponentsStyles.scss'
 import './Card.scss'
-import cartIcon from '../../../assets/Cart.png'
-import loader from '../../../assets/loader.png'
+import cartIcon from '../../../../assets/Cart.png'
+import loader from '../../../../assets/loader.png'
 import { useState } from 'react'
-import type { CardsProps, Article } from '../../../types'
+import type { CardsProps, Article } from '../../../../types'
 
 
 export const Cards: React.FC<CardsProps> = ({ articles, onAddToCart, isLoading = false }) => {

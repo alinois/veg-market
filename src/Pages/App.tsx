@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { Header } from './Modules/Header'
-import { Body } from './Modules/Body'
+import { Header } from './Modules/Header/Header'
+import { Body } from './Modules/Body/Body'
 import type { CartItem, Article } from '../types'
 
 export const App: React.FC = () => {
